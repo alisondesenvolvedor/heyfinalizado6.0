@@ -576,7 +576,7 @@ hr.style-one {
   color: #FFFFFF;
   font-size: 16px;
   font-weight: 600;
-  padding: 15px 59.5px;
+  padding: 0px 10.5px;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
   -webkit-box-shadow: 0px 10px 30px 0px rgba(255, 130, 87, 0.3);
@@ -2224,6 +2224,7 @@ hr.style-one {
 
 .cta-three {
   background: transparent url(../images/cta-bg-1-2.png) bottom center no-repeat;
+  
   background-size: cover;
   padding-bottom: 220px;
   padding-top: 382px;
@@ -2661,3 +2662,56 @@ hr.style-one {
   /* Firefox 18- */
   color: #fff;
 }
+
+.banner-one {
+  margin-bottom: -200px; /* Ajuste o valor conforme necessário */
+}
+
+.cta-three {
+  margin-top: -200px; /* Ajuste o valor conforme necessário */
+}
+
+/* Adicione essas classes somente em telas médias e maiores */
+
+/* Classes para adicionar margens apenas em telas médias e maiores */
+@media (min-width: 768px) {
+  .custom-margin-bottom {
+      margin-bottom: 20px; /* Ajuste o valor conforme necessário */
+  }
+
+  .custom-margin-top {
+      margin-top: 20px; /* Ajuste o valor conforme necessário */
+  }
+}
+
+/* Adicione uma margem superior somente em telas maiores (desktops) */
+@media (min-width: 768px) {
+  .banner-one {
+      margin-bottom: 20px; /* Adicione uma margem inferior se desejar */
+      margin-top: 20px; /* Adicione uma margem superior para a primeira seção */
+  }
+}
+
+@media (max-width: 767px) {
+  .cta-three__content, .pricing-one  {
+      position: relative;
+      padding-top: 100px; /* Adicione espaço acima do texto */
+      z-index: 1;
+  }
+
+  .cta-three__btn {
+      position: relative;
+      top: 20px; /* Ajuste a distância vertical conforme necessário */
+      z-index: 2;
+  }
+}
+
+/* Para computadores com largura maior que 767px */
+@media (min-width: 768px) {
+  .cta-three__content {
+    padding-top: 20px; /* Reduza este valor para ajustar o espaço desejado */
+  }
+}
+
+
+
