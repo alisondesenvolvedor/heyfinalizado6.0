@@ -1893,7 +1893,7 @@ hr.style-one {
 .pricing-one {
   position: relative;
   z-index: 10;
-  padding-top: 60px;
+  padding-top: 5px;
 }
 .pricing-one__single {
   padding-bottom: 50px;
@@ -2111,6 +2111,11 @@ hr.style-one {
   position: relative;
   padding-bottom: 120px;
 }
+@media (max-width: 768px) {
+  .cta-two {
+    padding-bottom: 200px; /* Aumente o espaçamento para dispositivos móveis */
+  }
+}
 .cta-two [class*=bubble-] {
   position: absolute;
   -webkit-animation-name: bubbleMover;
@@ -2223,11 +2228,11 @@ hr.style-one {
 }
 
 .cta-three {
-  background: transparent url(../images/cta-bg-1-2.png) bottom center no-repeat;
+  
   
   background-size: cover;
   padding-bottom: 220px;
-  padding-top: 382px;
+  padding-top: 220px;
   position: relative;
 }
 .cta-three [class*=bubble-] {
@@ -2713,5 +2718,46 @@ hr.style-one {
   }
 }
 
+/* Estilo para o botão WhatsApp */
+/* Estilo para o botão WhatsApp */
+.whatsapp-button {
+  background-color: #25D366; /* Cor de fundo com opacidade (no formato RGBA) */
+  color: #fff; /* Cor do texto */
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px; /* Espaçamento dentro do botão */
+  border-radius: 5px; /* Cantos arredondados */
+  font-size: 16px; /* Tamanho da fonte do texto */
+  
+}
 
+/* Estilo para o ícone do WhatsApp */
+.whatsapp-icon {
+  width: 20px; /* Largura do ícone */
+  height: 20px; /* Altura do ícone */
+  vertical-align: middle; /* Alinhar verticalmente com o texto */
+  margin-right: 10px; /* Espaço à direita do ícone */
+}
+
+/* Ao passar o mouse sobre o botão */
+.whatsapp-button:hover {
+  background-color: #25D366;
+  color: white; /* Cor de fundo com opacidade (no formato RGBA) ao passar o mouse */
+}
+
+
+@media (max-width: 768px) {
+  .whatsapp-button {
+    font-size: 14px; /* Reduzir o tamanho da fonte em telas menores */
+    padding: 8px 16px; /* Ajustar o espaçamento em telas menores */
+  }
+  
+  .whatsapp-icon {
+    width: 16px; /* Reduzir o tamanho do ícone em telas menores */
+    height: 16px; /* Reduzir o tamanho do ícone em telas menores */
+    margin-right: 8px; /* Ajustar o espaçamento em telas menores */
+  }
+}
+
+/* Estilos para dispositivos móveis (largura máxima de 768 pixels) */
 
